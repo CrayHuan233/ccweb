@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>赤潮-阅览室</title>
+    <link rel="icon" type="image/x-icon" href="https://free.picui.cn/free/2025/08/31/68b43da577a83.jpg">
+
+</head>
+
+<style>
+    
+</style>
+
+<body>
+    <div class="example-modal">
+        <mdui-navigation-drawer modal close-on-esc close-on-overlay-click contained>
+            <mdui-button-icon style="left: 10px; top: 10px;" onclick="navigationDrawer.open=false" icon="menu" id="closeDrawer"></mdui-button-icon>
+
+            <mdui-list>
+
+                <mdui-list-item href=index.html alignment="center" description="">
+                    首页
+                    <mdui-icon slot="icon" name="home"></mdui-icon>
+                </mdui-list-item>
+
+                <mdui-list-item href=ccnews.html alignment="center" description="会议、报告以及发展动态">
+                    组织动态
+                    <mdui-icon slot="icon" name="insert_chart"></mdui-icon>
+                </mdui-list-item>
+
+                <mdui-list-item href=movies.html alignment="center" description="我们最新制作的视频及资料">
+                    赤潮宣传部
+                    <mdui-icon slot="icon" name="live_tv"></mdui-icon>
+                </mdui-list-item>
+
+                <mdui-list-item href=library.html alignment="center" description="历史和哲学的一些资料">
+                    阅览室
+                    <mdui-icon slot="icon" name="book"></mdui-icon>
+                </mdui-list-item>
+            
+                <mdui-list-item href="https://速云.com" target="_blank" alignment="center" description="赤潮为会员提供免费使用的VPN（目前尚未实现,但目前这个站主亲测好用）">
+                    科学上网
+                    <mdui-icon slot="icon" name="cast_connected"></mdui-icon>
+                </mdui-list-item>
+
+                <mdui-list-item href=toolbox.html alignment="center" description="">
+                    工具箱
+                    <mdui-icon slot="icon" name="apps"></mdui-icon>
+                </mdui-list-item>
+            
+            </mdui-list>
+
+        </mdui-navigation-drawer>
+
+            <mdui-top-app-bar>
+                <mdui-button-icon onclick="navigationDrawer.open=true" icon="menu" id="openDrawer"></mdui-button-icon>
+                <mdui-top-app-bar-title><a href="index.html" style="color: black; text-decoration: none;">赤潮</a></mdui-top-app-bar-title>
+                <mdui-button-icon onclick="navigationDrawer.open=false" target='_blank' icon="add_shopping_cart" id="juanZeng" href="https://afdian.com/a/chichao" title="提供捐助"></mdui-button-icon>
+                <mdui-dropdown>
+                    <mdui-button-icon slot="trigger" icon="perm_identity"></mdui-button-icon>
+                    <mdui-menu>
+                        <mdui-menu-item onclick="window.location.href=''" disabled>会员登录</mdui-menu-item>
+                        <mdui-menu-item onclick="window.location.href='https://www.wjx.cn/vm/Q0CmJk5.aspx#'">成为会员</mdui-menu-item>
+                    </mdui-menu>
+                </mdui-dropdown>
+            </mdui-top-app-bar>
+            <h2>↓文库导航页</h2>
+            <mdui-chip href="https://docs.qq.com/pdf/DR1dORURFWW1oTmxL" target="_blank">墙内（腾讯文档）</mdui-chip>
+            <mdui-chip href="https://secondary-coral-dkn0st3i6i.edgeone.app/%E8%B5%84%E6%96%99.pdf" target="_blank">墙外（更简洁的界面）</mdui-chip>
+            <mdui-chip href="https://developer-oss.lanrar.com/file/?B2EHOVprUmMCCwQ8Cz5dMQc4DjYDtAWyVtUB4VSeUsoFK1RzXGVTYQJyVmYHOgBtU2xUDlRiCmxSaFVhUTgAMwc3B2haN1I1AmEEZgt5XToHLg42A20FNVZgATRUP1JhBSNUc1xxUzoCZlYwB2EANFMmVGFUMwonUmZVYlEiAGUHPwc0WjFSMwJkBGILPV09B2wOagNtBTRWMwExVGxSYQUwVDpcMlM3AmJWOAdlAGJTMVRmVGkKa1JjVTBRbAAvB3cHNFphUiACIQQhCzpdLgc0Dm8DYQUzVmIBM1Q8UmQFPVQzXCdTcwI9Vm0HNgBnUzRUYFQ8Cj1SY1VlUTgAMQc3B2FaPlIoAnoEdAs5XTAHKg42A2wFIVYkAXdUf1JuBTRUNFw0UzECYlY0B2sANFM6VGhULQp9UjxVI1EwADIHMQd+WjZSMAJlBHwLbl1tB28OJQNtBTFWZgEpVC5SNwVqVHRcb1NYAjdWawduADFTJ1R3VH8KcVIlVTZRUgB0B2YHbVo3" target="_blank">下载导航页面（pdf）</mdui-chip>
+
+        </div>
+    </div>
+      
+        <script>
+            const example = document.querySelector(".example-modal");
+            const navigationDrawer = example.querySelector("mdui-navigation-drawer");
+            const openButton = example.querySelector(".open");
+            const closeButton = example.querySelector(".close");
+            
+            openButton.addEventListener("click", () => navigationDrawer.open = true);
+            closeButton.addEventListener("click", () => navigationDrawer.open = false);
+        </script>
+    </body>
+</html>
